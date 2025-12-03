@@ -5,7 +5,7 @@ This project showcases how an ATM system can be developed in two different envir
 
 ---
 
-## 📌 **Project Overview**
+##  **Project Overview**
 
 This repository contains two versions of an ATM System:
 
@@ -42,7 +42,7 @@ Features:
 
 ---
 
-## 🖼️ **Preview (React Version)**
+##  **Preview (React Version)**
 
 ✔ Modern ATM interface
 ✔ Smooth transitions
@@ -52,10 +52,10 @@ Features:
 
 ---
 
-## 📂 **Folder Structure Suggestion**
+##  **Folder Structure Suggestion**
 
 ```
-📁 project-root/
+ project-root/
  ├── react-atm/
  │    └── ATMSystem.jsx
  ├── cpp-atm/
@@ -65,7 +65,7 @@ Features:
 
 ---
 
-## 🚀 **React ATM – Setup & Run**
+##  **React ATM – Setup & Run**
 
 ### **Prerequisites**
 
@@ -95,7 +95,7 @@ npm run dev
 
 ---
 
-## 🖥️ **C++ ATM – Compile & Run**
+##  **C++ ATM – Compile & Run**
 
 ### **Using g++**
 
@@ -107,7 +107,7 @@ g++ atm.cpp -o atm
 
 ---
 
-## 📘 **Code Explanation**
+##  **Code Explanation**
 
 ### **React Version Highlights**
 
@@ -133,7 +133,7 @@ g++ atm.cpp -o atm
 
 ---
 
-## 💡 **Future Improvements**
+##  **Future Improvements**
 
 * Add API backend for real account data
 * Add PIN encryption
@@ -143,13 +143,14 @@ g++ atm.cpp -o atm
 
 ---
 
-## 🤝 **Contributing**
+##  **Contributing**
 
 Pull requests are welcome!
 Feel free to open issues for suggestions or improvements.
 
 ---
 
-## 📜 **License**
+##  **License**
 
 This project is open-source and free to use.
+
