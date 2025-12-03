@@ -1,70 +1,155 @@
-# Getting Started with Create React App
+# **PIN-ATM System**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A dual-implementation ATM simulation built using **React (Frontend UI)** and **C++ (Console Based)**.
+This project showcases how an ATM system can be developed in two different environments while maintaining the same core banking logic: **View Balance**, **Deposit**, and **Withdraw**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 **Project Overview**
 
-### `npm start`
+This repository contains two versions of an ATM System:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **1. React ATM System (Modern UI)**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A fully interactive ATM interface built using:
 
-### `npm test`
+* **React.js**
+* **TailwindCSS**
+* **Lucide-React Icons**
+* Clean UI with authentication (PIN: `1234`)
+* Features:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  * PIN login screen
+  * View Balance
+  * Withdraw (with quick-select buttons)
+  * Deposit
+  * Logout
+  * Real-time UI feedback (success/error messages)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **2. C++ ATM Program (Console Based)**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A simple and clean C++ implementation of core ATM operations.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Features:
 
-### `npm run eject`
+* View balance
+* Withdraw money
+* Deposit money
+* Input validation
+* Loop-based menu system
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🖼️ **Preview (React Version)**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+✔ Modern ATM interface
+✔ Smooth transitions
+✔ User-friendly design
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+*(Add screenshots or GIFs here if you want)*
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📂 **Folder Structure Suggestion**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+📁 project-root/
+ ├── react-atm/
+ │    └── ATMSystem.jsx
+ ├── cpp-atm/
+ │    └── atm.cpp
+ └── README.md
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🚀 **React ATM – Setup & Run**
 
-### Analyzing the Bundle Size
+### **Prerequisites**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Make sure you have installed:
 
-### Making a Progressive Web App
+* Node.js (v16+ recommended)
+* npm or yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### **Installation**
 
-### Advanced Configuration
+```bash
+cd react-atm
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### **Start the Development Server**
 
-### Deployment
+```bash
+npm run dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### **Login PIN**
 
-### `npm run build` fails to minify
+```
+1234
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🖥️ **C++ ATM – Compile & Run**
+
+### **Using g++**
+
+```bash
+cd cpp-atm
+g++ atm.cpp -o atm
+./atm
+```
+
+---
+
+## 📘 **Code Explanation**
+
+### **React Version Highlights**
+
+* Uses `useState` for:
+
+  * Balance
+  * PIN authentication
+  * UI screens
+  * Messages
+* Built with modular screen rendering
+* Includes quick withdrawal/deposit preset buttons
+* Fake PIN system for demo (`1234`)
+
+### **C++ Version Highlights**
+
+* Implements an `ATM` class with:
+
+  * `get_balance()`
+  * `withdraw(amount)`
+  * `deposit(amount)`
+* Basic menu loop with switch-case
+* Input validation for safe operations
+
+---
+
+## 💡 **Future Improvements**
+
+* Add API backend for real account data
+* Add PIN encryption
+* Add transaction history
+* Add card simulations
+* Add multi-user accounts
+
+---
+
+## 🤝 **Contributing**
+
+Pull requests are welcome!
+Feel free to open issues for suggestions or improvements.
+
+---
+
+## 📜 **License**
+
+This project is open-source and free to use.
